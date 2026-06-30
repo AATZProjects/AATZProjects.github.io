@@ -54,7 +54,7 @@ footer, nav, main {
 }
 
 /* Image Source */
-h5 {
+.img-src {
     letter-spacing: 1px;
 }
 
@@ -72,4 +72,10 @@ table, th, td {
 
 #chart-outer {
     display: flex;
+}
+
+code {
+    font-size: 18px;
+    background-color: #171515;
+    letter-spacing: 1px;
 }

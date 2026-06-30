@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorting Algorithms</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navigation menu -->
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="notation.html">NOTATION</a>
+        <a href="list.html">LIST</a>
+        <a href="code.html" id="selected">CODE</a>
+    </nav>
+
+    <!-- Main content of the webpage -->
+    <main>
+        <h1>Sorting Algorithms</h1>
+        <h2><u>Overview</u></h2>
+        <p>
+            This page contains an explanation of each algorithm to help understand the underlying function of each of the sorting algorithms.
+            <br>Specific code for various programming languages are provided via a linked website.
+        </p>
+
+        <div>
+            <h2>Bubble Sort</h2>
+            <p>
+                Bubble sort works by walking through each element of a given input list, for as many times as there are elements.
+                <br>It starts from the leftmost element and works its way to the rightmost unsorted element, comparing two elements at a time.
+                <br>If the left element is greater than the right element, then the two elements get swapped, putting the greater value on the right.
+                <br>This code checks to see if any values were changed during a loop, and if not it breaks out of the sort.
+            </p>
+
+            <a href="https://www.geeksforgeeks.org/dsa/bubble-sort-algorithm/" target="_blank">Code</a>
+            <img src="img/geeksforgeeks.jpg" width="50px">
+        </div>
+
+        <div>
+            <h2>Quicksort</h2>
+            <p>
+                Quicksort (Quick Sort) works with a method called "divide and conquer" in which the algorithm picks an element as a pivot
+                - typically the middle or last element - and the list is split into values smaller than the pivot and values larger than the pivot.
+                <br>After splitting the lists, the process gets repeated with each of the sides, splitting up each sides into smaller sides and sorting them.
+                <br>Eventually, the lists get reconstructed back together in their new sorted forms.
+            </p>
+
+            <a href="https://www.geeksforgeeks.org/dsa/quick-sort-algorithm/" target="_blank">Code</a>
+            <img src="img/geeksforgeeks.jpg" width="50px">
+        </div>
+
+        <div>
+            <h2>Mergesort</h2>
+            <p>
+                Mergesort (Merge Sort) follows the "divide and conquer" method of sorting where the main list is split in half until each list is only a single element.
+                <br>Once the values have been broken down to a one-item list, they are merged back together, two lists at a time, until the full list is reassembled and sorted.</br>
+            </p>
+
+            <a href="https://www.geeksforgeeks.org/dsa/merge-sort/" target="_blank">Code</a>
+            <img src="img/geeksforgeeks.jpg" width="50px">
+        </div>
+
+        <div>
+            <h2>Insertion Sort</h2>
+            <p>
+                Insertion Sort works by walking through an array of elements and inserting each element in its sorted spot.
+                <br>It differs from Bubble Sort as each element is only visited once in one for-loop and uses a while-loop to move up the array until it's in its sorted position.
+            </p>
+
+            <a href="https://www.geeksforgeeks.org/dsa/insertion-sort-algorithm/" target="_blank">Code</a>
+            <img src="img/geeksforgeeks.jpg" width="50px">
+        </div>
+
+        <div>
+            <h2>Selection Sort</h2>
+            <p>
+                Selection Sort is one of the simplest sorting algorithms. It works by searching through a list for the smallest value.
+                <br>Once it finds the smallest value, it inserts it to the beginning of the list. Then, it repeats the loop, starting from the next element, and searches again for the <em>next</em> smallest element.
+                <br>Once the next smallest value is found, it gets inserted right in front of the previous smallest value.
+                <br>This cycle repeats until the entire list is sorted.
+            </p>
+
+            <a href="https://www.geeksforgeeks.org/dsa/selection-sort-algorithm-2/" target="_blank">Code</a>
+            <img src="img/geeksforgeeks.jpg" width="50px">
+        </div>
+        
+    </main>
+
+    <!-- Bottom footer -->
+    <footer>
+        <hr>
+        Copyright &copy; Perez 2026
+    </footer>
+
+
+</body>
+</html>

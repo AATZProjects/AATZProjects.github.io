@@ -2,21 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>R Programming Guide</title>
+    <title>Sorting Algorithms</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link href="css/styles.css" rel="stylesheet">
 
 </head>
 <body>
     <!-- Navigation menu -->
     <nav>
-        <a href="index.html">HOME</a>
-        <a href="gettingstarted.html">GETTING STARTED</a>
-        <a href="syntax.html">SYNTAX</a>
-        <a href="example.html">EXAMPLE CODE</a>
+        <a href="index.html" id="selected">HOME</a>
+        <a href="notation.html">NOTATION</a>
+        <a href="list.html">LIST</a>
+        <a href="code.html">CODE</a>
     </nav>
 
     <!-- Main content of the webpage -->
     <main>
-        <p>Main content</p>
+        <h1>Sorting Algorithms</h1>
+        <h2><u>Overview</u></h2>
+        <img src="img/thumbnail.jpg" alt="Visualization a sorting algorithm, halfway through its sort." width="500px">
+        <p>As early as computation's infancy, finding the fastest way to sort a list of unordered values
+        has been a heavily discussed topics amongst computer scientists. One of the most rudimentary sorting algorithms - Bubble Sort -
+        <a href="https://www.proquest.com/docview/301940891" target="_blank"> had even been analyzed as early as 1956.</a>
+        </p>
+
+        <p>
+            There are now numerous different algorithms used to order a list of elements, and studying these functions is crucial
+            for working with large amounts of data. Not every sorting algorithm is made equal, however, and there are many different ways
+            to judge a sorting algorithm's efficiency and usefulness. Time complexity, memory usage, and stability are often used to
+            examine various policies.
+        </p>
+
+        <div>
+            <p>
+                For a visualization on various Sorting Algorithms, check out the <a href ="https://www.youtube.com/watch?v=kPRA0W1kECg" target="_blank">attached YouTube video</a>. (Warning: Flashing Images.)
+            </p>
+
+            <!-- Copied from YouTube Embed-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kPRA0W1kECg?si=KlHaLwfU0bZDsS_H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div>
+            <p>
+                Before diving into how to set up sorting functions, first learn how these algorithms are judged by learning about computational complexity.
+            </p>
+
+            <a href="notation.html" class="button">Learn About Complexity Notation</a>
+        </div>
+
     </main>
 
     <!-- Bottom footer -->

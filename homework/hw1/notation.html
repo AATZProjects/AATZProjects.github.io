@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorting Algorithms</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navigation menu -->
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="notation.html" id="selected">NOTATION</a>
+        <a href="list.html">LIST</a>
+        <a href="code.html">CODE</a>
+    </nav>
+
+    <!-- Main content of the webpage -->
+    <main>
+        <h1>Sorting Algorithms</h1>
+        <h2><u>Computational Complexity Notation</u></h2>
+        
+
+        <p>Sorting Algorithms are judged by various factors, such as time complexity, memory usage, and stability.
+            One of the most common ways of comparing their efficiency is using <strong>Big <em>O</em> Notation.</strong>
+            <br>
+            
+            Big O Notation describes the trends of an algorithm as its input size increases.
+            For example, imagine a list of values that are not currently in order:
+            <br>
+            5 3 1 6 7 2 4 8
+            <br><br>
+            A very simple sorting algorithm, like bubble sort, works by going left-to-right, comparing two values at a time, and swaps them if the
+            right value is smaller than the left.
+            <br>The algorithm makes its way through the list multiple times, starting from the first value and continuing
+            until the last, until the entire list is sorted.
+            <br>At the worst case scenario, the algorithm will have to revisit each item for as many items there are in the list.
+
+            <br><br>
+            <img src="img/Bubble-sort-example-300px.gif" alt="Wikipedia example gif of how Bubble Sort works">
+            <a href="https://commons.wikimedia.org/wiki/File:Bubble-sort-example-300px.gif" target="_blank"><h5>Image Source</h5></a>
+
+            <!-- The <code></code> and <sup></sup> tags are new additions not seen previously -->
+            <br>
+            If the number of items on a list is represented by <code>n</code>, then in the worst-case scenario this sorting algorithm will have to visit
+            <code>n</code> number of items for <code>n</code> number of times, or <code>n<sup>2</sup></code> number of times.
+            <br>The overall <em>time complexity</em> of this algorithm can be described as <u><bold>O(n<sup>2</sup>)</bold></u>.
+            The <em>time complexity</em> measures how much <em>time</em> an algorithm will rougly take proportional to its input size <code>n</code>.
+            <br>
+            <code>O()</code> is the formal notation for this measurement, and inside the parantheses is the complexity represented in a function.
+            <br>Big O Notation can be used to measure the best-case, average-case, or worst-case scenario of an algorithm, but in Computer Science it is often
+            more useful to discuss algorithms by their worst-case scenario performance, especially when comparing them against one another.
+        </p>
+
+        <br>
+
+        <h2><u>Space Complexity</u></h2>
+        <p>
+            Similarly to how time performance can be measured using Big O Notation, memory usage can also be analyzed with the same metric.
+            <br>An algorithms memory efficiency, or <em>space complexity</em>, is the measurement of how much storage or RAM may be allocated in relation
+            to the input size.
+            <br>The previously mentioned Bubble Sort, for example, relies on <strong>no</strong> extra memory usage for the comparisons.
+            <br>This means that, no matter how big the input size is, the memory usage is functionally the exact same, giving it a space complexity of <code>O(1)</code>.
+        </p>
+
+        <h2><u>Space-Time Tradeoff</u></h2>
+        <p>
+            An interesting pattern to note is that there is often an inverse relationship between Time Complexity and Space Complexity - meaning that
+            the faster an algorithm is, the more storage it typically uses. This is because some of the fastest accessing and sorting algorithms rely on saving quick lookup information.
+            <br>This is not a unique feature of sorting algorithms, but is a very common design principle of computer science overall.
+            <br>The pattern of sacrificing storage use for response time - or vice versa - appears in operating system design, databases, networking, and general programming.
+            <br>For a more in-depth look at various types of tradeoffs, refer to the following GeeksForGeeks entry:
+            <a href="https://www.geeksforgeeks.org/dsa/time-space-trade-off-in-algorithms/" target="_blank">Time-Space Trade-Off in Algorithms.</a>
+        </p>
+
+        <br>
+        <p>
+            For a comparison of some of the most common sorting algorithms, <a href="list.html">visit the list page.</a>
+        </p>
+    </main>
+
+    <!-- Bottom footer -->
+    <footer>
+        <hr>
+        Copyright &copy; Perez 2026
+    </footer>
+
+
+</body>
+</html>

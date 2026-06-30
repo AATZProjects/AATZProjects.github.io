@@ -1,0 +1,75 @@
+body {
+    /* Font Settings */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+
+    margin-left: 100px;
+    margin-right: 100px;
+
+    /* New CSS tag to use a background image */
+    background-image: linear-gradient(black, white);
+    background-image: url("../img/bg.jpg");
+    
+    /* New CSS tag to edit the background behind content */
+    backdrop-filter: blur(7px);
+    
+}
+
+main {
+
+}
+
+a {
+    color: gray;
+}
+
+nav {
+    margin: 25px;
+    background-color: #120303;
+    
+}
+
+nav a {
+    color: #FFD9D9;
+    font-size: 24px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    transition: 0.1s;
+}
+
+#selected {
+    color: #7A5C5C;
+}
+
+footer, nav, main {
+    text-align: center;
+}
+
+/* Image Source */
+h5 {
+    letter-spacing: 1px;
+}
+
+table, th, td {
+    /* New CSS tag: creates a border around elements of a table*/
+    border: 1px solid;
+
+    /* New CSS tag: collapses the cell borders of a table together */
+    border-collapse: collapse;
+
+    padding: 10px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+#chart-outer {
+    display: flex;
+}

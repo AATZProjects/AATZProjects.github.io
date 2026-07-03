@@ -1,0 +1,69 @@
+body {
+    background-image: url(../img/bg.jpg);
+
+    color: ghostwhite;
+    text-shadow: 2px 2px 3px black;
+    
+}
+
+header, #main {
+    /* Blurry Backdrop */
+    text-align: center;
+    margin-top: 50px;
+    backdrop-filter: blur(10px);
+    background: rgba(92, 74, 74, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(29, 8, 8, 0.37);
+    padding: 1%;
+}
+
+#main {
+    font-size: 24px;
+    padding: 3%;
+    margin: 3px;
+    line-height: 35px;
+}
+
+#previousGuesses, #numGuesses {
+    font-size: 18px;
+}
+
+#winLoss {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+#wins {
+    color: green;
+}
+
+#losses {
+    color: red;
+}
+
+#guessSection {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#playerGuess {
+    height: 50px;
+    font-size: 20px;
+}
+
+#guessBtn {
+    font-size: 20px;
+    height: 50px;
+    width: 100px;
+}
+
+#feedback {
+    background: white;
+    text-shadow: 0px 0px 0px black;   
+}
+
+#resetBtn {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}

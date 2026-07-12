@@ -1,60 +1,91 @@
 <!DOCTYPE html>
 <html>
+
 <head>
    <meta charset="utf-8">
    <title> Sign Up Page </title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+
+   <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
-<h1> Sign Up Form</h1>
-<form id="signupForm" action="welcome.html">
-  <label> First Name:
-    <input type="text" id="fName" name="fName"><br>
-  </label>
+   <main>
+      <h1>CREATE ACCOUNT</h1>
+      <form id="signupForm" action="welcome.html">
+         <div class="grid">
+            <label> First Name:
+               <input type="text" id="fName" name="fName"><br>
+            </label>
 
-  <label>Last Name:
-     <input type="text" id="lName" name="lName"><br>
-  </label>
+            <label>Last Name:
+               <input type="text" id="lName" name="lName"><br>
+            </label>
 
-  Gender:
-  <label><input type="radio" name="gender" value="m"> Male</label>
-  <label><input type="radio" name="gender" value="f"> Female</label><br>
+            <div>
+               Gender:
+               <label><input type="radio" name="gender" value="m"> Male</label>
+               <label><input type="radio" name="gender" value="f"> Female</label><br>
+            </div>
 
-  <label>Zip Code:
-     <input type="text" id="zip" name="zip"><br>
-  </label>
 
-  City: <span id="city"></span><br>
-  Latitude: <span id="latitude"></span><br>
-  Longitude: <span id="longitude"></span><br>
 
-  <label>State:
-  <select id="state" name="state">
-    <option value="">Loading States...</option>
-  </select><br>
-  </label>
+            <label>Zip Code:
+               <input type="text" id="zip" name="zip"><br>
+            </label>
 
-  <label>Select a County:
-     <select id="county" name="county"></select><br>
-  </label>
+            <div>
+               City: <span id="city"></span><br>
+               Latitude: <span id="latitude"></span><br>
+               Longitude: <span id="longitude"></span><br>
+            </div>
+            <div></div>
 
-  <label>Desired Username:
-     <input type="text" id="username" name="username">
-  </label>
-  <span id="usernameError"></span><br>
 
-  <label>Password:
-  <input type="password" id="password" name="password">
-  </label>
-  <span id="suggestedPassword"></span><br>
 
-  <label>Type Password Again:
-     <input type="password" id="passwordAgain" name="passwordAgain"><br>
-  </label>
-  <span id="passwordError"></span><br>
+            <label>State:
+               <select id="state" name="state">
+                  <option value="">Loading States...</option>
+               </select><br>
+            </label>
 
-  <button>Sign up!</button>
-</form>
-<script src="js/script.js"></script>
+            <label>Select a County:
+               <select id="county" name="county"></select><br>
+            </label>
+            <div></div>
+
+
+
+            <label>Desired Username:
+               <input type="text" id="username" name="username">
+            </label>
+            <span id="usernameError"></span><br>
+
+            <div>
+               <label>Password:
+                  <input type="password" id="password" name="password">
+               </label>
+               <br>
+               <span id="suggestedPassword"></span><br>
+            </div>
+
+            <div>
+               <label>Type Password Again:
+                  <input type="password" id="passwordAgain" name="passwordAgain"><br>
+               </label>
+               <span id="passwordError"></span><br>
+            </div>
+
+         </div>
+
+         <button>Sign up!</button>
+      </form>
+      <script src="js/script.js"></script>
+   </main>
 </body>
+
 </html>

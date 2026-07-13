@@ -1,0 +1,46 @@
+<!-- HOMEWORK 3 - Author Cristian Perez -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Color Palette Picker</title>
+
+        <link rel="stylesheet" href="css/coloris.css"/> <!-- Color picker by coloris.js.org -->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <main>
+            <h1>COLOR PALETTE GENERATOR</h1>
+            <h2>Bring your designs to life, faster!</h2>
+
+            <form id="generate-form" action="index.html">
+                <h3>SELECT A COLOR:</h3>
+                <input type="text" data-coloris id="chosen-color" name="color">
+                <h3>SELECT A COMBINATION TYPE:</h3>
+                <div id="combination-buttons">
+                    <input type="radio" id="tolight" name="combination-type" value="monochrome-light"><label for="tolight">To Light</label>
+                    <input type="radio" id="todark" name="combination-type" value="monochrome-dark"><label for="todark">To Dark</label>
+                    <input type="radio" id="lighttodark" name="combination-type" value="monochrome"><label for="lighttodark">Light to Dark</label>
+                    <input type="radio" id="fullgradient" name="combination-type" value="analogic"><label for="fullgradient">Analogic</label>
+                    <input type="radio" id="complement" name="combination-type" value="complement"><label for="complement">Complement</label>
+                </div>
+                <div id="num-selector">
+                    Number of Colors <input type="number" id="num-colors" name="num-colors">
+                </div>
+                <span id="submission-feedback"></span>
+                <br><br>
+                <button>GENERATE</button>
+            </form>
+
+            <div id="palette"></div>
+        </main>
+
+        <footer>
+
+        </footer>
+
+        <script src="js/coloris.js"></script>
+        <script src="js/script.js"></script>    <!-- Color picker by coloris.js.org -->
+    </body>
+</html>

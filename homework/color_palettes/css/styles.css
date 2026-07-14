@@ -97,3 +97,9 @@ body {
     color: #5B5C6E;
     text-decoration: none;
 }
+
+footer {
+    background-color: #0d0d0d;
+    color: white;
+    text-align: center;
+}

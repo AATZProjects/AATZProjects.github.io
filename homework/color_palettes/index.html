@@ -2,45 +2,64 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Color Palette Picker</title>
 
-        <link rel="stylesheet" href="css/coloris.css"/> <!-- Color picker by coloris.js.org -->
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body>
-        <main>
-            <h1>COLOR PALETTE GENERATOR</h1>
-            <h2>Bring your designs to life, faster!</h2>
+<head>
+    <meta charset="UTF-8">
+    <title>Color Palette Picker</title>
 
-            <form id="generate-form" action="index.html">
-                <h3>SELECT A COLOR:</h3>
+    <link rel="stylesheet" href="css/coloris.css" /> <!-- Color picker by coloris.js.org -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <form id="generate-form" action="index.html">
+            <section class="left-picker">
+                <h1>COLOR PALETTE GENERATOR</h1>
+                <h2>Bring your ideas to life, faster.</h2>
+                <h3>It starts with a color.</h3>
                 <input type="text" data-coloris id="chosen-color" name="color">
-                <h3>SELECT A COMBINATION TYPE:</h3>
+                <h3>Pick your combination.</h3>
                 <div id="combination-buttons">
-                    <input type="radio" id="tolight" name="combination-type" value="monochrome-light"><label for="tolight">To Light</label>
-                    <input type="radio" id="todark" name="combination-type" value="monochrome-dark"><label for="todark">To Dark</label>
-                    <input type="radio" id="lighttodark" name="combination-type" value="monochrome"><label for="lighttodark">Light to Dark</label>
-                    <input type="radio" id="fullgradient" name="combination-type" value="analogic"><label for="fullgradient">Analogic</label>
-                    <input type="radio" id="complement" name="combination-type" value="complement"><label for="complement">Complement</label>
+                    <input type="radio" id="tolight" name="combination-type" value="monochrome-light"><label
+                        for="tolight">To Light</label>
+                    <input type="radio" id="todark" name="combination-type" value="monochrome-dark"><label
+                        for="todark">To Dark</label>
+                    <input type="radio" id="lighttodark" name="combination-type" value="monochrome"><label
+                        for="lighttodark">Light to Dark</label>
+                    <input type="radio" id="fullgradient" name="combination-type" value="analogic"><label
+                        for="fullgradient">Analogic</label>
+                    <input type="radio" id="complement" name="combination-type" value="complement"><label
+                        for="complement">Complement</label>
                 </div>
                 <div id="num-selector">
-                    Number of Colors <input type="number" id="num-colors" name="num-colors">
+                    <br>Number of Colors <input type="number" id="num-colors" name="num-colors">
                 </div>
                 <span id="submission-feedback"></span>
                 <br><br>
-                <button>GENERATE</button>
-            </form>
+                <button id="generate-btn">GENERATE</button>
 
+                <br><br><span id="api-shoutout"><a href="https://www.thecolorapi.com/" target="_blank">Utilizing The Color API</a></span>
+            </section>
+        </form>
+
+        <section class="right-palette">
             <div id="palette"></div>
-        </main>
+        </section>
+    </main>
 
-        <footer>
+    <footer>
 
-        </footer>
+    </footer>
 
-        <script src="js/coloris.js"></script>
-        <script src="js/script.js"></script>    <!-- Color picker by coloris.js.org -->
-    </body>
+    <script src="js/coloris.js"></script>
+    <script src="js/script.js"></script> <!-- Color picker by coloris.js.org -->
+</body>
+
 </html>
